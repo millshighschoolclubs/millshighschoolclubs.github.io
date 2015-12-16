@@ -1,1 +1,317 @@
+<!DOCTYPE.html>
+<html>
+<head>
+  <meta charset = "utf-8">
+  <title>TEDxMillbrae</title>
+  <link href='http://fonts.googleapis.com/css?family=Syncopate|Cantarell:700|Shadows+Into+Light+Two|Ubuntu|Lora' rel='stylesheet' type='text/css'>
+  <script src='processing.min.js'></script>
+ 
+  
+  
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" /> 
+ <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>  
+
+<STYLE TYPE="text/css">
+
+
+
+body{
+    text-align:center;
+    padding: 0px;
+    margin: 0px;1
+    background-color: white
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+   position: fixed;
+}
+
+li {
+    float: left;
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {font-family: 'Cantarell';
+    font-weight: bold;
+    font-size: 95px;
+    padding-top: 200px;
+    margin: 0px;
+    height: 55%; 
+    width: 100%;
+    text-align:center;
+    background-position: center;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("http://share-fastly.picmonkey.com/prod/photo_posts/Z41sD0kmAEN_12496052.jpg");
+    background-attachment: fixed
+
+}
+
+a.tedlink:link, a.tedlink:visited {
+text-decoration: none;
+padding: 0px;
+margin: 0px;
+color: #FF0000;
+background-color: white;
+display: inline;
+opacity: 1.0;
+}
+
+a.tedlink:active, a.tedlink:hover{
+  color: #800000
+}
+
+ a:link, a:visited {
+    padding: 0px;
+    margin: 0px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    display: block;
+    font-family: 'Ubuntu';
+    width: 192.7px;
+    
+    color: white;
+    background-color: #2C5853;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+ a:hover, a:active {
+   
+    color: #66ffbf;
+  
+}
+
+p{ font-family: 'Lora';
+    font-weight: normal;
+   font-size: 20px;
+    padding: 0px;
+    margin: 0px 
+
+  }
+
+h3 {font-family: 'Lora';
+  padding: 10px;
+  margin: 10px;
+
+}
+
+
+
+p.about{
+  font-family: 'Shadows Into Light Two';
+  font-size: 50px;
+}
+
+h3.title { float: left;
+  display: inline-block;
+}
+
+
+#share-buttons {
+width: 100%;
+height: 65px;
+padding-bottom: 0px;
+padding-top: 0px
+}
+
+a.apple{
+  text-decoration: none;
+  width: 400px;
+  display: inline;
+  background-color: transparent;
+  color: orange;
+  opacity: 1.0
+}
+.back-to-top {
+    position: fixed;
+    bottom: 2em;
+    right: 0px;
+    text-decoration: none;
+    color: #000000;
+    background-color: rgba(235, 235, 235, 0.80);
+    font-size: 12px;
+    padding: 1em;
+    display: none;
+    height: 5px;
+}
+
+.back-to-top:hover {    
+    background-color: rgba(135, 135, 135, 0.50);
+    height: 5px;
+}
+
+div.About {
+  margin: 10px;
+  padding: 10px;
+}
+
+#tedpic {
+position: inline;
+}
+
+#license{
+  background-color: white;
+  font-size: 14px;
+}
+ 
+ #mainspeak{
+float:left;
+width: 30%;
+padding-left: 5px;
+
+}
+#sidebar {
+float:right;
+width: 60%;
+padding-right: 5px; 
+}
+#sidebarattend {
+float:left;
+width: 40%;
+}
+
+#sidebarvolunteer{
+  float: right;
+  width: 40%;
+}
+#wrap {
+width: 100%;
+margin:0 auto;
+}
+
+h2 {
+  font-family: "Ubuntu";
+}
+
+</STYLE>
+</head>
+
+
+ <body>
+       
+
+<div data-role="page" id = "Home">
+
+<div id="navcontainer">
+<ul id="navlist" class = "navlinks">
+<li id="navactive"><a href="#Home" id="current">Home</a></li>
+<li><a href="#About">About</a></li>
+<li><a href="#Videos">Talks</a></li>
+<li><a href="#Mission">Mission</a></li>
+<li><a href="#Participate">Participate</a></li>
+<li><a href="#Contact">Contact</a></li>
+<li> <div id="share-buttons" style= "float: right">
+      <a href="https://www.facebook.com/groups/776431462463660/" target="_blank">
+      <img id = "fbbutton" height = "30px" width = "30px" src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
+     </div>
+</li>
+</ul>
+</div>
+
+<h1 class = "title" ><font color="red"><b>TEDx</font><font color="white"> Millbrae</font></b>
+<br><font color="white" size = "4"><font color="red">x</font> = independently organized TED event </font></h1>
+  <div id = "pictures" style = "float: center">
+	
+
+
+</div>
+</div>
+
+<div data-role="page" id = "About" style="background-color:white">
+ <div role="main" class="ui-content"> 
+  <p class= "about"><strong style = "color:#2C5853">What is TEDx Millbrae ?</strong></p>
+  <br>
+  <p style = "margin: 0px 55px; padding: 10px; color:black" align = "justify">
+In the spirit of ideas worth spreading, TED has created a program called TEDx. <a class = "tedlink" id = "tedlink" target="_blank" href="http://www.ted.com/about/programs-initiatives/tedx-program">TEDx</a> is a program of local, self-organized events that bring people together to share a TED-like experience. Our event is called TEDxMillbrae, where x = independently organized TED event. At our TEDxMillbrae event, TEDTalks video and live speakers will combine to spark deep discussion and connection in a small group. The TED Conference provides general guidance for the TEDx program, but individual TEDx events, including ours, are self-organized.</p>
+ </div>
+</div>
+
+
+<div data-role="page" id = "Videos" style="background-color:gray">
+ <div role="main" class="ui-content">
+  <p class = "about"><strong style= "color:white">Talks:</strong></p>
+  <p class = "video">Videos at TEDX Millbrae!</p><br>
+<iframe width="320" height="195" style = "padding: 15px" src="https://www.youtube.com/embed/5mV0ZmqkfKA" frameborder="0" allowfullscreen></iframe>
+<iframe width="320" height="195" style = "padding: 15px" src="https://www.youtube.com/embed/uOPh7VQ_9sE" frameborder="0" allowfullscreen></iframe>
+<iframe width="320" height="195" style = "padding: 15px" src="https://www.youtube.com/embed/M0yhHKWUa0g" frameborder="0" allowfullscreen></iframe>
+<iframe width="320" height="195" style = "padding: 15px" src="https://www.youtube.com/embed/Ks-_Mh1QhMc" frameborder="0" allowfullscreen></iframe>
+<iframe width="320" height="195" style = "padding: 15px" src="https://www.youtube.com/embed/5mV0ZmqkfKA" frameborder="0" allowfullscreen></iframe>
+<iframe width="320" height="195" style = "padding: 15px" src="https://www.youtube.com/embed/5mV0ZmqkfKA" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+
+<div data-role="page" id = "Mission" style="background-color:#9E213E">
+ <div role="main" class="ui-content"> 
+  <p class= "about"><strong style = "color:white">Mission: What is TED ?</strong><br> </p>
+  <p style = "color:white; margin: 0px 55px; padding: 10px" align = "justify">
+TED is a nonprofit devoted to spreading ideas, usually in the form of short, powerful talks (18 minutes or less). TED began in 1984 as a conference where Technology, Entertainment and Design converged, and today covers almost all topics — from science to business to global issues — in more than 100 languages. Meanwhile, independently run TEDx events help share ideas in communities around the world.
+For more information, visit <a class = "tedlink" id = "tedlink" style = "background-color:#9E213E; color:white; text-transform: lowercase" target="_blank" href="https://www.ted.com/">www.ted.com
+</a>.</p>
+<p class= "about"><strong style = "color:white">The Mills High School TED-Ed Club</strong><br> </p>
+<p style = "color:white; margin: 0px 55px; padding: 10px" align = "justify">The Mills High School TED-Ed club is a platform for students to freely hold discussions about passionate topics. As a sector of the TED-Ed program, this club promotes the use of public speaking and the spread of different ideas among the Mills High School community.</p>
+<p style = "color:white">Presidents: Michelle Chan and Tiffany Yu</p>
+ <p style = "color:white">Project Manager: Adrianne Offril</p>
+ <p style = "color:white">Treasurer: Julian Magdangal</p>
+ <p style = "color:white">Secretary: David Lokotui</p>
+<img id= "tedpic" src="http://pb-assets.tedcdn.com/system/baubles/files/000/001/323/original/TEDEd-TopicsUnit.jpg?1405527851"  height = "200" widtth = "100" align="center"></img>
+
+
+<br>
+ 
+ </div>
+</div>
+
+<div data-role="page" id = "Participate">
+ <div role="main" class="ui-content"> <hr/>
+  <p class= "about"><strong style = "color:red">Participate:</strong><br></p>
+  <div id = "wrap">
+<div id="mainspeak">
+<h2>Speak</h2>
+<p align="justify"><font size ="2">We are now accepting speaker nominations for TEDxMillbrae 2016, to be held on May 31st at MIlls High School. Diversity is a key element in the magic of any TEDx event, so whether you (or someone you know) is a speaker, dancer, performing artist, comedian or ‘other’, we’d love to hear from you! We’re looking for talks covering a wide variety of areas, including creativity, invention, business, science and the most pressing global issues. Please submit your recommendations here.</font></p>
+</div>
+<div id="sidebar">
+  <div id="sidebarattend">
+  <h2>Attend</h2>
+  <p align="justify"><font size ="2">Online applications to attend TEDxMillbrae 2016 will be opening in late April. Follow us on Twitter and Facebook for regular updates on opportunities to attend. <br><br> To reserve tickets, please click here. </font></p>
+  </div>
+  <div id="sidebarvolunteer">
+  <h2>Volunteer</h2>
+  <p align="justify"><font size ="2">TEDxMillbrae is made possible by a core team of passionate and dedicated volunteers. From stage design to handling media enquiries, from speaker curation to simultaneous interpretation, positions cover a wide variety of areas. If you’d like to join, please click here.</font></p>
+  </div>
+</div>
+</div>
+</div>
+
+<div data-role="page" id = "Contact">  <div role="main" class="ui-content">
+<hr/>   <p class = "about"><strong style = "color: aqua
+">Contact:</strong><br>    <p>For more information, please contact us
+at</p><br>   <a class = "apple" id = "apple" href="http://4.bp.blogspot.com/-d
+q5T7DZFBcU/VRuRUVP4XUI/AAAAAAAAAck/3Db_clJtsi0/s1600/the_panda.png"
+>millsteded@gmail.com </a> </p></div> </div> <br>
+
+<div data-role="footer" id="license" style="color:gray">
+<p>This independent TEDx event is operated under license from TED. (C) Mills TED Ed Club<script type="text/javascript">
+var d = new Date()
+document.write(d.getFullYear())
+</script></p>
+
+</div>
+
+<script src="js.js"></script>
+<a href="#" class="back-to-top">Back to Top</a>
+
+
+ </body>
+</html>   
+
 
