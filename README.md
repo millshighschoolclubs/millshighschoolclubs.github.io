@@ -1,2 +1,2 @@
 # kaitlynchan.github.io
-tedx website!
+website for the clubs at mills high school ^_^
